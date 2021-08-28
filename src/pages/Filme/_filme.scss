@@ -1,0 +1,61 @@
+.filme-info {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 900px;
+        color: rgba(255, 255, 255, 0.8);
+        
+        h1 {
+            margin-top: 25px;
+            font-size: 28px;
+        }
+        img {
+            border-radius: 20px;
+            margin-top: 15px;
+            width: 100%;
+            max-height: 350px;
+        }
+        h3 {
+            margin-top: 15px;
+        }
+        p {
+            margin-top: 10px;
+            text-align: justify;
+            line-height: 150%;
+        }
+        .botoes {
+            align-self: flex-start;
+            margin-top: 20px;
+            button {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+                cursor: pointer;
+                border-radius: 5px;
+                border: 0;
+                font-size: 20px;
+                outline: none;
+                padding: 12px;
+                transition: all .5s;
+                color: rgba(0, 0, 0, 0.801);
+                font-weight: bold;
+                               
+                a {
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.801);
+                    font-weight: bold;
+                }
+                &:hover {
+                    background-color: rgb(202, 29, 29);
+                    color: #FFF;
+                    a {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}

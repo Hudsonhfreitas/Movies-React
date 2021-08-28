@@ -1,0 +1,52 @@
+.todos-filmes {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .lista-filmes{
+            margin: 15px;
+            article {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+                box-shadow: 8px 5px 15px rgba(0,0,0,0.5);
+                border-radius: 0 0 8px 8px;
+                &:not(:first-child) {
+                    margin-top: 2rem;
+                }
+                strong {
+                    position: absolute;
+                    top: 1rem;
+                    left: 2rem;
+                    padding-bottom: 15px;
+                    font-size: 25px;
+                    color: #FFF;
+                    text-shadow: 4px 4px 5px black;
+                }
+                img {
+                    width: 100%;
+                    max-width: 900px;
+                    max-height: 450px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #FFFF;
+                    background-color: rgba(202, 29, 29, 0.8);
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0;
+                    border-radius: 0 0 8px 8px;
+                    transition: all .3s;
+                    &:hover {
+                        background-color: darken(rgb(202, 29, 29), 10%)
+                    }
+                }
+            }
+        }
+    }
+}
